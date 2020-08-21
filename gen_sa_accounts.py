@@ -150,7 +150,7 @@ def serviceaccountfactory(
     list_projects=False,
     list_sas=None,
     create_projects=None,
-    max_projects=12,
+    max_projects=52,
     enable_services=None,
     services=['iam','drive'],
     create_sas=None,
@@ -265,7 +265,7 @@ if __name__ == '__main__':
     parse.add_argument('--list-projects',default=False,action='store_true',help='List projects viewable by the user.')
     parse.add_argument('--list-sas',default=False,help='List service accounts in a project.')
     parse.add_argument('--create-projects',type=int,default=None,help='Creates up to N projects.')
-    parse.add_argument('--max-projects',type=int,default=12,help='Max amount of project allowed. Default: 12')
+    parse.add_argument('--max-projects',type=int,default=52,help='Max amount of project allowed. Default: 52')
     parse.add_argument('--enable-services',default=None,help='Enables services on the project. Default: IAM and Drive')
     parse.add_argument('--services',nargs='+',default=['iam','drive'],help='Specify a different set of services to enable. Overrides the default.')
     parse.add_argument('--create-sas',default=None,help='Create service accounts in a project.')
